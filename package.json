@@ -1,0 +1,13 @@
+{
+  "name": "express-for-girls",
+  "version": "1.0.0",
+  "description": "Express For Girls - Beacons.ai style link-in-bio page",
+  "main": "WebsiteJS.js",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "serve": "npx http-server -p 8080"
+  },
+  "keywords": ["website", "beacons", "link-in-bio"],
+  "author": "",
+  "license": "ISC"
+}

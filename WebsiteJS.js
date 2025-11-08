@@ -1,0 +1,57 @@
+// Profile data
+const profileData = {
+  name: "Express For Girls",
+  bio: "Welcome to Express For Girls",
+  imageUrl: "./images/logo.png",
+};
+
+// Links data
+const links = [
+  {
+    title: "קהילת וואטסאפ",
+    url: "https://chat.whatsapp.com/BrK6PGelx39I8XX7sBU5Mw?mode=wwt",
+    icon: "❤️",
+    isHighlighted: true,
+  },
+];
+
+// Initialize page
+document.addEventListener("DOMContentLoaded", function () {
+  // Set profile information
+  document.getElementById("profileName").textContent = profileData.name;
+  document.getElementById("profileBio").textContent = profileData.bio;
+  document.getElementById("profileImg").src = profileData.imageUrl;
+
+  // Create link buttons
+  const linksContainer = document.getElementById("linksContainer");
+  links.forEach((link) => {
+    const linkElement = document.createElement("a");
+    linkElement.href = link.url;
+    linkElement.target = "_blank";
+    linkElement.rel = "noopener noreferrer";
+    linkElement.className = link.isHighlighted
+      ? "link-button highlighted"
+      : "link-button";
+
+    const linkContent = document.createElement("div");
+    linkContent.className = "link-content";
+
+    if (link.icon) {
+      const iconSpan = document.createElement("span");
+      iconSpan.className = "link-icon";
+      iconSpan.textContent = link.icon;
+      linkContent.appendChild(iconSpan);
+    }
+
+    const titleSpan = document.createElement("span");
+    titleSpan.className = "link-title";
+    titleSpan.textContent = link.title;
+    linkContent.appendChild(titleSpan);
+
+    linkElement.appendChild(linkContent);
+    linksContainer.appendChild(linkElement);
+  });
+});
+
+// Add smooth scroll behavior
+document.documentElement.style.scrollBehavior = "smooth";
