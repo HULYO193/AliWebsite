@@ -8,12 +8,15 @@ const profileData = {
 // Links data
 const links = [
   {
-    title: "קהילת וואטסאפ",
+    title: "לחצו כאן כדי להצטרף לקהילת וואטסאפ",
     url: "https://chat.whatsapp.com/BrK6PGelx39I8XX7sBU5Mw?mode=wwt",
     icon: "❤️",
     isHighlighted: true,
   },
 ];
+
+// Debug: Log to verify script is loaded
+console.log("WebsiteJS.js loaded - Link title:", links[0].title);
 
 // Initialize page
 document.addEventListener("DOMContentLoaded", function () {
