@@ -13,6 +13,9 @@ body {
     align-items: center;
     padding: 20px;
 }
+p {
+    font-size: 15px;
+}
 
 .container {
     width: 100%;
