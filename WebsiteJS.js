@@ -53,6 +53,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     linkElement.appendChild(linkContent);
     linksContainer.appendChild(linkElement);
+
+    // Track Meta Pixel event when WhatsApp button is clicked
+    if (link.url.includes("whatsapp.com")) {
+      linkElement.addEventListener("click", function () {
+        // Track custom event for WhatsApp click
+        if (typeof fbq !== "undefined") {
+          fbq("track", "Lead", {
+            content_name: "WhatsApp Community Join",
+            content_category: "Link Click",
+          });
+          // Also track as a custom event
+          fbq("trackCustom", "WhatsAppClick");
+        }
+      });
+    }
   });
 });
 
