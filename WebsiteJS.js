@@ -13,10 +13,18 @@ const links = [
     icon: "❤️",
     isHighlighted: true,
   },
+  {
+    title: "לחצו כאן כדי להצטרף לקהילת הטלגרם",
+    url: "https://t.me/+U5K-TKbbjoRhYmZk",
+    icon: "💕",
+    isHighlighted: true,
+  },
 ];
 
 // Debug: Log to verify script is loaded
-console.log("WebsiteJS.js loaded - Link title:", links[0].title);
+console.log("WebsiteJS.js loaded - Total links:", links.length);
+console.log("Link 1:", links[0].title);
+console.log("Link 2:", links[1].title);
 
 // Initialize page
 document.addEventListener("DOMContentLoaded", function () {
