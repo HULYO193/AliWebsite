@@ -9,7 +9,7 @@ const profileData = {
 const links = [
   {
     title: "לחצו כאן כדי להצטרף לקהילת וואטסאפ",
-    url: "https://chat.whatsapp.com/HyiLqPzZQDbExlIO9y2EaE", //new link
+    url: "https://chat.whatsapp.com/JQpsOHtY33fLm47d4LKccb?mode=gi_c",
     icon: "❤️",
     isHighlighted: true,
   },
@@ -74,4 +74,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Add smooth scroll behavior
 document.documentElement.style.scrollBehavior = "smooth";
-
