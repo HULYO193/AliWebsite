@@ -9,7 +9,7 @@ const profileData = {
 const links = [
   {
     title: "לחצו כאן כדי להצטרף לקהילת וואטסאפ",
-    url: "https://chat.whatsapp.com/JQpsOHtY33fLm47d4LKccb?mode=gi_c",
+    url: "https://chat.whatsapp.com/CgILHcePcM3ACcfFdj42dU?mode=gi_c",
     icon: "❤️",
     isHighlighted: true,
   },
